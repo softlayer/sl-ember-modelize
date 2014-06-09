@@ -3,6 +3,7 @@
 
 process.title = 'testrunner';
 
+var fs = require( 'fs' );
 var broccoli   = require('broccoli');
 var mergeTrees = require('broccoli-merge-trees');
 var filterES6Modules = require('broccoli-es6-module-filter');
@@ -90,7 +91,6 @@ var finalTree = mergeTrees([
 ],{ overwrite: true });
 
 var util=require('util');
-console.log(util.inspect(tree, { showHidden: true, depth: null }))
 var builder = new broccoli.Builder(finalTree);
 var Watcher = require('broccoli/lib/watcher');
 var watcher = new Watcher(builder);
@@ -114,7 +114,9 @@ process.on('SIGTERM', function () {
 });
 
 process.addListener('exit', function () {
+    console.log( 'exiting' );
     builder.cleanup();
+    fs.rmdirSync( 'tmp' );
 });
 
 console.log('starting...');
