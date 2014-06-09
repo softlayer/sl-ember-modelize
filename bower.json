@@ -1,11 +1,11 @@
 {
   "name": "emberize-model",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Matthew Marcum <mmarcum@softlayer.com>"
   ],
   "description": "",
-  "main": "dist/main.js",
+  "main": "dist/emberize-model.js",
   "keywords": [],
   "license": "?",
   "private": true,
