@@ -3,7 +3,6 @@
 
 process.title = 'testrunner';
 
-var fs = require('fs');
 var broccoli   = require('broccoli');
 var mergeTrees = require('broccoli-merge-trees');
 var filterES6Modules = require('broccoli-es6-module-filter');
