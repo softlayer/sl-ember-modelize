@@ -1,5 +1,6 @@
-# Emberize Model
+# SL-Modelize
 
-## Take a json object and Emberize it!
+## Take a object and Emberize it!
 
-
+* Will recursively look up keys (via the container) on an object and check to see if a model exists that matches that key
+** If so the object value for that key will become that model
