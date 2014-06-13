@@ -1,9 +1,7 @@
 define("sl-modelize",
-  ["ember","exports"],
-  function(__dependency1__, __exports__) {
+  ["exports"],
+  function(__exports__) {
     "use strict";
-    var ember = __dependency1__["default"] || __dependency1__;
-
     __exports__["default"] = Ember.Mixin.create({
         modelize: function ( response ) {
             var mapArrayToClass = function ( item, index, enumberable ) {
@@ -32,7 +30,7 @@ define("sl-modelize",
                             response[ property ] = Ember.Object.create( response[ property ] );
                         }
 
-                        this.emberize.call( this, response[ property ] );
+                        this.modelize.call( this, response[ property ] );
                     }
                 }
             }
