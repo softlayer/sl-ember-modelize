@@ -2,7 +2,7 @@
   "name": "sl-modelize",
   "version": "0.0.0",
   "description": "",
-  "main": "lib/main.js",
+  "main": "lib/sl-modelize.js",
   "scripts": {
     "test": "",
     "release": ""
