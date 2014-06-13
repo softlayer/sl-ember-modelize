@@ -23,27 +23,27 @@ tree =  mergeTrees(
                 broconcat(
                     mergeTrees(
                         [
-                            pickFiles( 'bower_components/jquery/dist', {
+                            pickFiles( 'vendor/jquery/dist', {
                                 srcDir : '/',
                                 files : [ 'jquery.js' ],
                                 destDir : '/assets'
                             } ),
-                            pickFiles( 'bower_components/handlebars', {
+                            pickFiles( 'vendor/handlebars', {
                                 srcDir : '/',
                                 files : [ 'handlebars.js' ],
                                 destDir : '/assets'
                             } ),
-                            pickFiles( 'bower_components/loader.js', {
+                            pickFiles( 'vendor/loader.js', {
                                 srcDir : '/',
                                 files : [ 'loader.js' ],
                                 destDir : '/assets'
                             } ),
-                            pickFiles( 'bower_components/ember', {
+                            pickFiles( 'vendor/ember', {
                                 srcDir : '/',
                                 files : [ 'ember.js' ],
                                 destDir : '/assets'
                             } ),
-                            pickFiles( 'bower_components/ember-resolver/dist', {
+                            pickFiles( 'vendor/ember-resolver/dist', {
                                 srcDir : '/',
                                 files : [ 'ember-resolver.js' ],
                                 destDir : '/assets'
