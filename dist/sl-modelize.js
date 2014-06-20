@@ -3,6 +3,13 @@ define("sl-modelize",
   function(__exports__) {
     "use strict";
     __exports__["default"] = Ember.Mixin.create({
+        /**
+         * Modelize an object by replacing keys with their corresponsding model, as found via the container 
+         *
+         * @method modelize
+         * @param  {Object} response
+         * @return {Object}
+         */
         modelize: function ( response ) {
             var mapArrayToClass = function ( item, index, enumberable ) {
                 return classProperty.create( item );
