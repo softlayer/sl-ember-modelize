@@ -1,11 +1,11 @@
 {
   "name": "sl-modelize",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "lib/sl-modelize.js",
+  "main": "dist/sl-modelize.js",
   "scripts": {
-    "test": "",
-    "release": ""
+    "test": "./testrunner.js",
+    "release": "rm -rf dist;broccoli build dist;"
   },
   "repository": {
     "type": "git",
