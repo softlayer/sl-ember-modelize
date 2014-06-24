@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.softlayer.local:mmarcum/sl-modelize.git"
+    "url": "git@gitlab.softlayer.local:interface/sl-modelize.git"
   },
   "keywords": [],
   "author": "Matt Marcum",
