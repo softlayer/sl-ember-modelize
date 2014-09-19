@@ -1,34 +1,36 @@
 {
   "name": "sl-modelize",
-  "version": "0.0.1",
-  "description": "",
-  "main": "dist/sl-modelize.js",
+  "version": "0.0.0",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
   "scripts": {
-    "test": "./testrunner.js",
-    "release": "rm -rf dist;broccoli build dist;"
+    "start": "ember server",
+    "build": "ember build",
+    "test": "ember test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitlab.softlayer.local:interface/sl-modelize.git"
+  "repository": "https://github.com/stefanpenner/ember-cli",
+  "engines": {
+    "node": ">= 0.10.0"
   },
-  "keywords": [],
-  "author": "Matt Marcum",
-  "license": "",
-  "dependencies": {
-    "broccoli": "^0.12.2",
-    "broccoli-cli": "^0.0.1",
-    "broccoli-concat": "0.0.6",
-    "broccoli-es6-module-filter": "^0.1.9",
-    "broccoli-merge-trees": "",
-    "broccoli-export-tree": "0.3.1",
-    "broccoli-static-compiler": "",
-    "chai": "^1.9.1",
-    "chai-as-promised": "^4.1.1",
-    "mocha": "^1.18.0",
-    "mocha-jshint": "0.0.7",
-    "bower": "^1.2.8",
-    "ic-ajax": "1.0.4",
-    "rsvp": "^3.0.6",
-    "testem": "0.6.15"
+  "keywords": [
+    "ember-addon"
+  ],
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.2.0",
+    "broccoli-asset-rev": "0.0.17",
+    "broccoli-ember-hbs-template-compiler": "^1.6.1",
+    "ember-cli": "0.0.44",
+    "ember-cli-ember-data": "0.1.0",
+    "ember-cli-ic-ajax": "0.1.1",
+    "ember-cli-qunit": "0.0.5",
+    "express": "^4.8.5",
+    "glob": "^4.0.5"
   }
 }

@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Mixin.create({
     /**
      * Modelize an object by replacing keys with their corresponsding model, as found via the container 
