@@ -9,7 +9,7 @@ export default Ember.Mixin.create({
      * @return {Object}
      */
     modelize: function ( response ) {
-        var mapArrayToClass = function ( item, index, enumberable ) {
+        var mapArrayToClass = function ( item ) {
             return classProperty.create( item );
         };
 

@@ -1,3 +1,54 @@
 <h2 id='title'>Welcome to SL-Modelize!</h2>
 
+<p>The purpose of this mixin is to take a pojo and turn it into a series of 
+nested model objects.  This works for objects stored on keys and on arrays of 
+objects stored on keys too.</p>
+
+<p>Consider this fixture:</p>
+<pre>
+    fixture: { 
+        foo: {
+            bar: {
+                car: [ 
+                    {
+                        name: 'car1',
+                        color: 'blue'
+                    },
+                    {
+                        name: 'car2',
+                        color: 'red'
+                    },
+                    {
+                        name: 'car3',
+                        color: 'black'
+                    }
+                ],
+                test: 'this is a bar model'
+            },
+            text: 'this is a foo model'
+        }
+    }
+</pre>
+
+<p>Passing this pojo through the `modelize` function will cause the object 
+stored in the values for `foo`, `bar`, and the array stored on `car` to be 
+replaced with the models defined for those key names in the app.  `Modelize` 
+looks up models via Ember's container, if a model is found then it is 
+instantiated with the values from the fixture. <p>
+
+<p>You can verify this by typing the following commands into your browser's console:</p>
+
+<pre>
+Foo = Dummy.__container__.lookupFactory('model:foo')
+Dummy.__container__.lookup('controller:application').get('model.foo') instanceof Foo
+
+Bar = Dummy.__container__.lookupFactory('model:bar')
+Dummy.__container__.lookup('controller:application').get('model.foo.bar') instanceof Bar
+
+Car = Dummy.__container__.lookupFactory('model:car')
+Dummy.__container__.lookup('controller:application').get('model.foo.bar.car.firstObject') 
+</pre>
+
+<p>Or better yet, take a look at the <a href="/tests">TESTS</a>!
+
 {{outlet}}
