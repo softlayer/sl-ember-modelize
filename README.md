@@ -54,7 +54,7 @@ Ember.Object.extend( ModelizeMixin, {} );
 You can now call `modelize` from within that object like so:
 
 ```javascript
- modelizedObj = this.modelize( pojo );
+ modelizedObj = this.modelize( POJO );
 ```
 
 
@@ -63,28 +63,28 @@ You can now call `modelize` from within that object like so:
 
 <p>Consider this fixture:</p>
 <pre>
-fixture: {
-    foo: {
-        bar: {
-            car: [
-                {
-                    name: 'car1',
-                    color: 'blue'
-                },
-                {
-                    name: 'car2',
-                    color: 'red'
-                },
-                {
-                    name: 'car3',
-                    color: 'black'
-                }
-            ],
-            test: 'this is a bar model'
-        },
-        text: 'this is a foo model'
+    fixture: {
+        foo: {
+            bar: {
+                car: [
+                    {
+                        name: 'car1',
+                        color: 'blue'
+                    },
+                    {
+                        name: 'car2',
+                        color: 'red'
+                    },
+                    {
+                        name: 'car3',
+                        color: 'black'
+                    }
+                ],
+                test: 'this is a bar model'
+            },
+            text: 'this is a foo model'
+        }
     }
-}
 </pre>
 
 <p>Passing this POJO through the `modelize` function will cause the object stored in the values for `foo`, `bar`, and
