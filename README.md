@@ -61,35 +61,35 @@ You can now call `modelize` from within that object like so:
 
 # How it works
 
-<p>Consider this fixture:</p>
-<pre>
-    fixture: {
-        foo: {
-            bar: {
-                car: [
-                    {
-                        name: 'car1',
-                        color: 'blue'
-                    },
-                    {
-                        name: 'car2',
-                        color: 'red'
-                    },
-                    {
-                        name: 'car3',
-                        color: 'black'
-                    }
-                ],
-                test: 'this is a bar model'
-            },
-            text: 'this is a foo model'
-        }
+Consider this fixture:
+```
+fixture: {
+    foo: {
+        bar: {
+            car: [
+                {
+                    name: 'car1',
+                    color: 'blue'
+                },
+                {
+                    name: 'car2',
+                    color: 'red'
+                },
+                {
+                    name: 'car3',
+                    color: 'black'
+                }
+            ],
+            test: 'this is a bar model'
+        },
+        text: 'this is a foo model'
     }
-</pre>
+}
+```
 
-<p>Passing this POJO through the `modelize` function will cause the object stored in the values for `foo`, `bar`, and
-the array stored on `car` to be replaced with the models defined for those key names in the app.  `Modelize` looks up
-models via Ember's container and if a model is found then it is instantiated with the values from the fixture.<p>
+Passing this POJO through the *modelize* function will cause the object stored in the values for *foo*, *bar*, and
+the array stored on *car* to be replaced with the models defined for those key names in the app.  *Modelize* looks up
+models via Ember's container and if a model is found then it is instantiated with the values from the fixture.
 
 
 
