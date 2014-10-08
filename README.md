@@ -62,6 +62,7 @@ You can now call `modelize` from within that object like so:
 # How it works
 
 Consider this fixture:
+
 ```
 fixture: {
     foo: {
