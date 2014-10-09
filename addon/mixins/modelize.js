@@ -1,12 +1,14 @@
 import Ember from 'ember';
 
+/** @module sl-modelize/mixins/modelize */
 export default Ember.Mixin.create({
+
     /**
-     * Modelize an object by replacing keys with their corresponsding model, as found via the container 
+     * Modelize an object by replacing keys with their corresponsding model, as found via the container
      *
-     * @method modelize
-     * @param  {Object} response
-     * @return {Object}
+     * @function modelize
+     * @argument {Object} response  Plain Javascript object
+     * @return   {Object}
      */
     modelize: function ( response ) {
         var mapArrayToClass = function ( item ) {
@@ -14,9 +16,9 @@ export default Ember.Mixin.create({
         };
 
         for ( var property in response ) {
-            /* There appears to be an issue with the __each attribute in some ember arrays that
-               causes a recursive loop that crashes the browser */
-            if ( property === '__each' ) {
+            // Appears to be an issue with the __each attribute in some Ember arrays
+            // that causes a recursive loop that crashes the browser
+            if ( '__each' === property ) {
                 continue;
             }
 
@@ -42,4 +44,4 @@ export default Ember.Mixin.create({
 
         return response;
     }
-}); 
+});
