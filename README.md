@@ -4,6 +4,7 @@ NPM package name: **sl-modelize**
 
 License: [MIT](LICENSE.md)
 
+---
 
 # What sl-modelize is
 
@@ -14,7 +15,7 @@ stored on keys too.  This mixin will:
 * Recursively resolve keys (via the container) on an object and check to see if a model exists that matches that key
 * Create models for keys and store the key's contents in those models
 
-
+---
 
 # Working Demo
 
@@ -31,7 +32,7 @@ stored on keys too.  This mixin will:
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
 
-
+---
 
 # How to use this addon in your application
 
@@ -57,7 +58,7 @@ You can now call `modelize` from within that object like so:
  modelizedObj = this.modelize( POJO );
 ```
 
-
+---
 
 # How it works
 
@@ -92,23 +93,23 @@ Passing this POJO through the *modelize* function will cause the object stored i
 the array stored on *car* to be replaced with the models defined for those key names in the app.  *Modelize* looks up
 models via Ember's container and if a model is found then it is instantiated with the values from the fixture.
 
-
+---
 
 # Versioning
 Employs [Semantic Versioning 2.0.0](http://semver.org/)
 
-
+---
 
 # Contribution
 [See CONTRIBUTING.md](CONTRIBUTING.md)
 
-
+---
 
 # Copyright and License
 sl-modelize and its source files are Copyright © 2014 [SoftLayer Technologies, Inc.](http://www.softlayer.com/) The
 software is [MIT Licensed](LICENSE.md)
 
-
+---
 
 # Warranty
 This software is provided “as is” and without any express or implied warranties, including, without limitation, the
