@@ -1,14 +1,38 @@
 import Ember from 'ember';
 
-/** @module sl-modelize/mixins/modelize */
+/**
+@module mixins
+@class  modelize
+*/
 export default Ember.Mixin.create({
+
+    // -------------------------------------------------------------------------
+    // Dependencies
+
+    // -------------------------------------------------------------------------
+    // Attributes
+
+    // -------------------------------------------------------------------------
+    // Actions
+
+    // -------------------------------------------------------------------------
+    // Events
+
+    // -------------------------------------------------------------------------
+    // Properties
+
+    // -------------------------------------------------------------------------
+    // Observers
+
+    // -------------------------------------------------------------------------
+    // Methods
 
     /**
      * Modelize an object by replacing keys with their corresponsding model, as found via the container
      *
      * @function modelize
-     * @argument {Object} response  Plain Javascript object
-     * @return   {Object}
+     * @argument {Ember.Object} response  Plain Javascript object
+     * @returns  {Ember.Object}
      */
     modelize: function ( response ) {
         var mapArrayToClass = function ( item ) {
