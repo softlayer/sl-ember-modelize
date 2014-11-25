@@ -1,8 +1,7 @@
 {
-  "name": "sl-modelize",
+  "name": "sl-ember-modelize",
   "version": "0.1.0",
   "description": "Ember CLI Addon - Modelize Mixin",
-  "private": true,
   "scripts": {
     "start": "ember server",
     "build": "ember build",
@@ -10,20 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://stash.softlayer.local/projects/INTERFACE/repos/sl-modelize/"
+    "url": "https://github.com/softlayer/sl-ember-modelize"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "keywords": [
     "ember-addon",
-    "sl-modelize"
+    "modelize",
+    "model",
+    "data"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
   "authors": [
-    "Matt Marcum <mmarcum@softlayer.com>"
+    "Matt Marcum <mmarcum@softlayer.com>",
+    "Jeremy Brown <jebrown@softlayer.com>",
+    "Ryan Edgell <redgell@softlayer.com>"
   ],
   "license": "MIT",
   "devDependencies": {

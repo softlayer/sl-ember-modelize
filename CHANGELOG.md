@@ -1,4 +1,4 @@
-# sl-modelize Changelog
+# sl-ember-modelize Changelog
 
 ### 1.0.0
 

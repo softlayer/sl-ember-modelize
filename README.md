@@ -1,16 +1,14 @@
 Ember CLI version: **0.1.2**
 
-NPM package name: **sl-modelize**
+NPM package name: **sl-ember-modelize**
 
 License: [MIT](LICENSE.md)
 
 ---
 
-# What sl-modelize is
+# What sl-ember-modelize is
 
-A mixin that will take a Plain Old Javascript Object (POJO) and turn it into a series of nested model objects, based on
-the models registered in your application's container.  This works for objects stored on keys and on arrays of objects
-stored on keys too.  This mixin will:
+A mixin that will take a Plain Old Javascript Object (POJO) and turn it into a series of nested model objects, based on the models registered in your application's container.  This works for objects stored on keys and on arrays of objects stored on keys too.  This mixin will:
 
 * Recursively resolve keys (via the container) on an object and check to see if a model exists that matches that key
 * Create models for keys and store the key's contents in those models
@@ -39,7 +37,7 @@ For more information on using ember-cli, visit [http://www.ember-cli.com/](http:
 ## Install this addon as a Node module
 
 ```
-npm install sl-modelize
+npm install --save-dev sl-ember-modelize
 ```
 
 ## Use the mixin
@@ -47,7 +45,7 @@ npm install sl-modelize
 Include it in your objects like so:
 
 ```javascript
-import ModelizeMixin from 'sl-modelize/mixins/modelize';
+import ModelizeMixin from 'sl-ember-modelize/mixins/modelize';
 
 Ember.Object.extend( ModelizeMixin, {} );
 ```
@@ -55,7 +53,7 @@ Ember.Object.extend( ModelizeMixin, {} );
 You can now call `modelize` from within that object like so:
 
 ```javascript
- modelizedObj = this.modelize( POJO );
+modelizedObj = this.modelize( POJO );
 ```
 
 ---
@@ -106,7 +104,7 @@ Employs [Semantic Versioning 2.0.0](http://semver.org/)
 ---
 
 # Copyright and License
-sl-modelize and its source files are Copyright © 2014 [SoftLayer Technologies, Inc.](http://www.softlayer.com/) The
+sl-ember-modelize and its source files are Copyright © 2014 [SoftLayer Technologies, Inc.](http://www.softlayer.com/) The
 software is [MIT Licensed](LICENSE.md)
 
 ---

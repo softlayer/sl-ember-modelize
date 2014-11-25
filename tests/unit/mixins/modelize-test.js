@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import SlModelize from 'sl-modelize/mixins/modelize';
+import SlModelize from 'sl-ember-modelize/mixins/modelize';
 
 var subject;
 

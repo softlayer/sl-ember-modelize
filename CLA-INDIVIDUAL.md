@@ -1,9 +1,9 @@
 #### International Business Machines, Inc. (IBM)
 ##### Individual Contributor License Agreement ("Agreement")
 
-http://www.github.com/softlayer/sl-modelize
+http://www.github.com/softlayer/sl-ember-modelize
 
-Thank you for your interest in the sl-modelize project ("the Project").
+Thank you for your interest in the sl-ember-modelize project ("the Project").
 
 In order to clarify the intellectual property license granted with Contributions
 from any person or entity, IBM must have a Contributor License Agreement ("CLA")
