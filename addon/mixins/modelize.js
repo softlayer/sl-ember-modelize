@@ -3,7 +3,7 @@ import Ember from 'ember';
 /**
  * @module mixins
  * @class  modelize
-*/
+ */
 export default Ember.Mixin.create({
 
     // -------------------------------------------------------------------------
@@ -31,7 +31,7 @@ export default Ember.Mixin.create({
      * Modelize an object by replacing keys with their corresponsding model, as found via the container
      *
      * @function modelize
-     * @parm     {Ember.Object} response  Plain Javascript object
+     * @param    {Ember.Object} response  Plain Javascript object
      * @returns  {Ember.Object}
      */
     modelize: function ( response ) {
