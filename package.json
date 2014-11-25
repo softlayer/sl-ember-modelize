@@ -1,6 +1,6 @@
 {
   "name": "sl-ember-modelize",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Ember CLI Addon - Modelize Mixin",
   "scripts": {
     "start": "ember server",
