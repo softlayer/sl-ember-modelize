@@ -1,7 +1,7 @@
 {
   "name": "sl-ember-modelize",
   "version": "1.0.0",
-  "description": "Ember CLI Addon - Modelize Mixin",
+  "description": "Provides the ability to turn a Plain Old Javascript Object (POJO) into a series of nested model objects.",
   "scripts": {
     "start": "ember server",
     "build": "ember build",
