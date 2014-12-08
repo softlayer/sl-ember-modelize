@@ -7,9 +7,11 @@
     "build": "ember build",
     "test": "ember test"
   },
+  "homepage": "http://softlayer.github.io/sl-ember-modelize/",
+  "bugs": "https://github.com/softlayer/sl-ember-modelize/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/softlayer/sl-ember-modelize"
+    "url": "https://github.com/softlayer/sl-ember-modelize.git"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -23,9 +25,9 @@
   "ember-addon": {
     "configPath": "tests/dummy/config"
   },
-  "authors": [
-    "Matt Marcum <mmarcum@softlayer.com>",
-    "Jeremy Brown <jebrown@softlayer.com>",
+  "contributors": [
+    "Matthew Marcum <mmarcum@softlayer.com> (http://strangelooper.com)",
+    "Jeremy Brown <jeremy@notmessenger.com> (http://www.notmessenger.com)",
     "Ryan Edgell <redgell@softlayer.com>"
   ],
   "license": "MIT",
@@ -43,8 +45,5 @@
     "ember-export-application-global": "^1.0.0",
     "express": "^4.8.5",
     "glob": "^4.0.5"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
   }
 }
