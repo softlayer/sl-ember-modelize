@@ -15,15 +15,21 @@ A mixin that will take a Plain Old Javascript Object (POJO) and turn it into a s
 
 ---
 
-# Working Demo
+# Demo
 
-## Installation
+## Live
+
+[http://softlayer.github.io/sl-ember-modelize/dist](http://softlayer.github.io/sl-ember-modelize/dist)
+
+## Development Environment
+
+### Installation
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
+### Running
 
 * `ember server`
 * View the demo at http://localhost:4200
