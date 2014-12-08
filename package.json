@@ -1,6 +1,6 @@
 {
   "name": "sl-ember-modelize",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provides the ability to turn a Plain Old Javascript Object (POJO) into a series of nested model objects.",
   "scripts": {
     "start": "ember server",
