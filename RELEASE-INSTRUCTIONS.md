@@ -47,4 +47,5 @@ Then follow these steps:
     * `assets/dummy.css` with `sl-ember-modelize/dist/assets/dummy.css`
     * `assets/vendor.js` with `sl-ember-modelize/dist/assets/vendor.js`
     * `assets/dummy.js` with `sl-ember-modelize/dist/assets/dummy.js`
+* Also within the */dist/index.html* file, in the `<meta name="dummy/config/environment"...` tag, replace the `locationType` value from `auto` to `hash`
 * Commit and push the changes
