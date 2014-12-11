@@ -9,7 +9,7 @@
                 </button>
 
                 <ul class="dropdown-menu" role="menu">
-                <li><a href="/sl-ember-modelize"><i class="fa fa-home"></i> Home</a></li>
+                <li>{{#link-to "index"}}<i class="fa fa-home"></i> Home{{/link-to}}</li>
                 <li><a href="https://github.com/softlayer/sl-ember-modelize/blob/master/README.md"><i class="fa fa-wrench"></i> Get Started</a></li>
                 <li><a href="https://github.com/softlayer/sl-ember-modelize/blob/master/CONTRIBUTING.md"><i class="fa fa-cog"></i> Contribution Guide</a></li>
                 <li><a href="https://github.com/softlayer/sl-ember-modelize/stargazers"><i class="fa fa-star"></i> Star Our Repo</a></li>
@@ -19,62 +19,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h1>Usage Demonstration</h1>
-            <p class="lead">View the source code of the dummy application for syntax employed in this demo</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <p>The purpose of this Mixin is to take a Plain Old Javascript Object (POJO) and turn it into a series of  nested model objects.  This works for objects stored on keys and on arrays of objects stored on keys too.</p>
-
-            <p>Consider this fixture:</p>
-
-            <pre>
-fixture: {
-    foo: {
-        bar: {
-            car: [
-                {
-                    name: 'car1',
-                    color: 'blue'
-                },
-                {
-                    name: 'car2',
-                    color: 'red'
-                },
-                {
-                    name: 'car3',
-                    color: 'black'
-                }
-            ],
-            test: 'this is a bar model'
-        },
-        text: 'this is a foo model'
-    }
-}
-</pre>
-
-            <p>Passing this POJO through the <code>modelize</code> function will cause the object stored in the values for <code>foo</code>, <code>bar</code>, and the array stored on <code>car</code>, to be replaced with the models defined for those key names in the app.  <code>Modelize</code> looks up models via Ember's container, if a model is found then it is instantiated with the values from the fixture. <p>
-
-            <p>You can verify this by typing the following commands into your browser's console:</p>
-
-            <pre>
-Foo = Dummy.__container__.lookupFactory('model:foo')
-Dummy.__container__.lookup('controller:application').get('model.foo') instanceof Foo
-
-Bar = Dummy.__container__.lookupFactory('model:bar')
-Dummy.__container__.lookup('controller:application').get('model.foo.bar') instanceof Bar
-
-Car = Dummy.__container__.lookupFactory('model:car')
-Dummy.__container__.lookup('controller:application').get('model.foo.bar.car.firstObject')
-</pre>
-
-            <p>Or better yet, take a look at the tests!
-        </div>
-    </div>
+    {{outlet}}
 
     <br><br>
     <div class="row">
