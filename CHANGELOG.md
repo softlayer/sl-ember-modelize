@@ -1,5 +1,12 @@
 # sl-ember-modelize Changelog
 
+### 1.2.0
+
+* [INTERNAL] Documentation updates
+* [INTERNAL] Update demo application
+
+[View complete changeset](https://github.com/softlayer/sl-ember-modelize/compare/v1.1.0...v1.2.0)
+
 ### 1.1.0
 
 * [#3](https://github.com/softlayer/sl-ember-modelize/pull/3) [INTERNAL] Update Contribution Guide
