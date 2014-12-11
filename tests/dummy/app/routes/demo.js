@@ -27,7 +27,7 @@ export default Ember.Route.extend(SlModelize, {
     },
 
     model: function(){
-        this.controllerFor( 'application' ).set( 'fixture', this.fixture );
+        this.controllerFor( 'demo' ).set( 'fixture', this.fixture );
         return this.modelize( this.fixture );
     }
 });
