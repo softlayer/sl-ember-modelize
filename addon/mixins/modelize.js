@@ -35,36 +35,29 @@ export default Ember.Mixin.create({
      * @returns  {Ember.Object}
      */
     modelize: function ( response ) {
-        var mapArrayToClass = function ( item ) {
-            return classProperty.create( item );
-        };
+        Ember.keys( response ).map(function ( key ) {
+            var normalizedKey,
+                classProperty,
+                mapArrayToClass = function ( item ) {
+                    return classProperty.create( item );
+                };
+            if ( 'object' === typeof response[ key ] ) {
+                normalizedKey = this.container.normalize( 'model:' + key );
+                classProperty = this.container.lookupFactory( normalizedKey );
 
-        for ( var property in response ) {
-            // Appears to be an issue with the __each attribute in some Ember arrays
-            // that causes a recursive loop that crashes the browser
-            if ( '__each' === property ) {
-                continue;
-            }
-
-            if ( response.hasOwnProperty( property ) ) {
-                if ( 'object' === typeof response[ property ] ) {
-                    var normalizedKey = this.container.normalize( 'model:'+property );
-                    var classProperty = this.container.lookupFactory( normalizedKey );
-
-                    if ( 'function' === typeof classProperty ) {
-                        if ( Ember.isArray( response[ property ] ) ) {
-                            response[ property ] = response[ property ].map( mapArrayToClass );
-                        } else {
-                            response[ property ] = classProperty.create( response[ property ] );
-                        }
-                    } else if ( response[ property ] && !Ember.isArray( response[ property ] ) && !(response[ property ] instanceof Ember.Object) ) {
-                        response[ property ] = Ember.Object.create( response[ property ] );
+                if ( 'function' === typeof classProperty ) {
+                    if ( Ember.isArray( response[ key ] ) ) {
+                        response[ key ] = response[ key ].map( mapArrayToClass );
+                    } else {
+                        response[ key ] = classProperty.create( response[ key ] );
                     }
-
-                    this.modelize.call( this, response[ property ] );
+                } else if ( response[ key ] && !Ember.isArray( response[ key ] ) && !(response[ key ] instanceof Ember.Object) ) {
+                    response[ key ] = Ember.Object.create( response[ key ] );
                 }
+
+                this.modelize.call( this, response[ key ] );
             }
-        }
+        }, this);
 
         return response;
     }
