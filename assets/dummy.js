@@ -24,7 +24,7 @@ eval("//# sourceURL=vendor/ember-cli/loader.js");
 
 ;eval("define(\"dummy/router\", \n  [\"ember\",\"dummy/config/environment\",\"exports\"],\n  function(__dependency1__, __dependency2__, __exports__) {\n    \"use strict\";\n    var Ember = __dependency1__[\"default\"];\n    var config = __dependency2__[\"default\"];\n\n    var Router = Ember.Router.extend({\n      location: config.locationType\n    });\n\n    Router.map(function() {\n        this.route( \'index\', { path: \'/\' });\n        this.route( \'demo\' );\n    });\n\n    __exports__[\"default\"] = Router;\n  });//# sourceURL=dummy/router.js");
 
-;eval("define(\"dummy/routes/demo\", \n  [\"ember\",\"sl-ember-modelize/mixins/modelize\",\"exports\"],\n  function(__dependency1__, __dependency2__, __exports__) {\n    \"use strict\";\n    var Ember = __dependency1__[\"default\"];\n    var SlModelize = __dependency2__[\"default\"];\n\n    __exports__[\"default\"] = Ember.Route.extend(SlModelize, {\n\n        fixture: {\n            foo: {\n                bar: {\n                    car: [\n                        {\n                            name: \'car1\',\n                            color: \'blue\'\n                        },\n                        {\n                            name: \'car2\',\n                            color: \'red\'\n                        },\n                        {\n                            name: \'car3\',\n                            color: \'black\'\n                        }\n                    ],\n                    test: \'this is a bar model\'\n                },\n                text: \'this is a foo model\'\n            }\n        },\n\n        model: function() {\n            this.controllerFor( \'demo\' ).set( \'fixture\', this.fixture );\n            return this.modelize( this.fixture );\n        }\n    });\n  });//# sourceURL=dummy/routes/demo.js");
+;eval("define(\"dummy/routes/demo\", \n  [\"ember\",\"sl-ember-modelize/mixins/modelize\",\"exports\"],\n  function(__dependency1__, __dependency2__, __exports__) {\n    \"use strict\";\n    var Ember = __dependency1__[\"default\"];\n    var SlModelize = __dependency2__[\"default\"];\n\n    __exports__[\"default\"] = Ember.Route.extend(SlModelize, {\n\n        fixture: {\n            foo: {\n                bar: {\n                    car: [\n                        {\n                            name: \'car1\',\n                            color: \'blue\'\n                        },\n                        {\n                            name: \'car2\',\n                            color: \'red\'\n                        },\n                        {\n                            name: \'car3\',\n                            color: \'black\'\n                        }\n                    ],\n                    test: \'this is a bar model\'\n                },\n                text: \'this is a foo model\'\n            }\n        },\n\n        model: function(){\n            this.controllerFor( \'demo\' ).set( \'fixture\', this.fixture );\n            return this.modelize( this.fixture );\n        }\n    });\n  });//# sourceURL=dummy/routes/demo.js");
 
 ;eval("define(\"dummy/sl-ember-modelize/tests/sl-ember-modelize/mixins/modelize.jshint\", \n  [],\n  function() {\n    \"use strict\";\n    module(\'JSHint - sl-ember-modelize/mixins\');\n    test(\'sl-ember-modelize/mixins/modelize.js should pass jshint\', function() { \n      ok(true, \'sl-ember-modelize/mixins/modelize.js should pass jshint.\'); \n    });\n  });//# sourceURL=dummy/sl-ember-modelize/tests/sl-ember-modelize/mixins/modelize.jshint.js");
 
@@ -89,7 +89,6 @@ catch(err) {
 
 
 
-
 });
 
 if (runningTests) {
@@ -97,7 +96,6 @@ if (runningTests) {
 } else {
   require("dummy/app")["default"].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true});
 }
-
 
 
 
