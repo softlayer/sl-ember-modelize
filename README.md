@@ -19,7 +19,7 @@ A mixin that will take a Plain Old Javascript Object (POJO) and turn it into a s
 
 ## Live
 
-[http://softlayer.github.io/sl-ember-modelize/dist](http://softlayer.github.io/sl-ember-modelize/dist)
+[http://softlayer.github.io/sl-ember-modelize/#/demo](http://softlayer.github.io/sl-ember-modelize/#/demo)
 
 ## Development Environment
 
