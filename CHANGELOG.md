@@ -1,5 +1,13 @@
 # sl-ember-modelize Changelog
 
+### 1.3.0
+
+* [#40](https://github.com/softlayer/sl-ember-modelize/pull/40) [INTERNAL] Remove use of content-for hooks to populate demo application's meta content
+* [#41](https://github.com/softlayer/sl-ember-modelize/pull/41) [INTERNAL] Add entry in .gitignore for Vim swap files
+* [#42](https://github.com/softlayer/sl-ember-modelize/pull/42) [DOCUMENTATION] Update link to demo application in README.md
+
+[View complete changeset](https://github.com/softlayer/sl-ember-modelize/compare/v1.2.0...v1.3.0)
+
 ### 1.2.0
 
 * [INTERNAL] Documentation updates
