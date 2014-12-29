@@ -6,6 +6,10 @@ License: [MIT](LICENSE.md)
 
 ---
 
+[![Build Status](https://travis-ci.org/softlayer/sl-ember-modelize.svg?branch=develop)](https://travis-ci.org/softlayer/sl-ember-modelize)
+
+---
+
 # What sl-ember-modelize is
 
 A mixin that will take a Plain Old Javascript Object (POJO) and turn it into a series of nested model objects, based on the models registered in your application's container.  This works for objects stored on keys and on arrays of objects stored on keys too.  This mixin will:
