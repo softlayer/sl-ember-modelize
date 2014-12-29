@@ -1,5 +1,13 @@
 # sl-ember-modelize Changelog
 
+### 1.4.0
+
+* [#48](https://github.com/softlayer/sl-ember-modelize/pull/48) [BREAKING ENHANCEMENT] Upgrade to Ember CLI 0.1.5
+* [#43](https://github.com/softlayer/sl-ember-modelize/pull/43) [INTERNAL] Installed ember-cli-es5-shim to faciliate running of tests via TravisCI
+* [#44](https://github.com/softlayer/sl-ember-modelize/pull/44) [INTERNAL] Update tests
+
+[View complete changeset](https://github.com/softlayer/sl-ember-modelize/compare/v1.3.0...v1.4.0)
+
 ### 1.3.0
 
 * [#40](https://github.com/softlayer/sl-ember-modelize/pull/40) [INTERNAL] Remove use of content-for hooks to populate demo application's meta content
