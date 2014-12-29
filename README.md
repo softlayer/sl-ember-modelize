@@ -1,4 +1,4 @@
-Ember CLI version: **0.1.4**
+Ember CLI version: **0.1.5**
 
 NPM package name: **sl-ember-modelize**
 
