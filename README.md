@@ -4,7 +4,7 @@ License: [MIT](LICENSE.md)
 
 ---
 
-[![Build Status](https://travis-ci.org/softlayer/sl-ember-modelize.svg?branch=develop)](https://travis-ci.org/softlayer/sl-ember-modelize)
+[![Build Status](https://travis-ci.org/softlayer/sl-ember-modelize.svg?branch=develop)](https://travis-ci.org/softlayer/sl-ember-modelize) [![Code Climate](https://codeclimate.com/github/softlayer/sl-ember-modelize/badges/gpa.svg)](https://codeclimate.com/github/softlayer/sl-ember-modelize)
 
 ---
 
