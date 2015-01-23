@@ -5,6 +5,8 @@
 
 [![Build Status](https://img.shields.io/travis/softlayer/sl-ember-modelize/develop.svg)](https://travis-ci.org/softlayer/sl-ember-modelize) [![Code Climate](https://img.shields.io/codeclimate/github/softlayer/sl-ember-modelize.svg)](https://codeclimate.com/github/softlayer/sl-ember-modelize)
 
+To see which issues are currently being worked on or are scheduled to be worked on next, visit [https://huboard.com/softlayer/sl-ember-modelize/#/](https://huboard.com/softlayer/sl-ember-modelize/#/)
+
 ---
 
 # What sl-ember-modelize is
