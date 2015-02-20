@@ -1,5 +1,13 @@
 # sl-ember-modelize Changelog
 
+### 1.5.0
+
+* [#63](https://github.com/softlayer/sl-ember-modelize/pull/63) [BREAKING ENHANCEMENT] Upgrade to Ember CLI 0.1.15
+* [#62](https://github.com/softlayer/sl-ember-modelize/pull/62) [BREAKING ENHANCEMENT] Removed es5-shim
+
+
+[View complete changeset](https://github.com/softlayer/sl-ember-modelize/compare/v1.4.0...v1.5.0)
+
 ### 1.4.0
 
 * [#48](https://github.com/softlayer/sl-ember-modelize/pull/48) [BREAKING ENHANCEMENT] Upgrade to Ember CLI 0.1.5
