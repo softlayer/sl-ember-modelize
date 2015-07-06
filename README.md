@@ -3,7 +3,7 @@
 
 [![Dependencies](https://img.shields.io/david/softlayer/sl-ember-modelize.svg)](https://david-dm.org/softlayer/sl-ember-modelize) [![Dev Dependencies](https://img.shields.io/david/dev/softlayer/sl-ember-modelize.svg)](https://david-dm.org/softlayer/sl-ember-modelize#info=devDependencies)
 
-[![Build Status](https://img.shields.io/travis/softlayer/sl-ember-modelize/develop.svg)](https://travis-ci.org/softlayer/sl-ember-modelize) [![Code Climate](https://img.shields.io/codeclimate/github/softlayer/sl-ember-modelize.svg)](https://codeclimate.com/github/softlayer/sl-ember-modelize)
+[![Build Status](https://img.shields.io/travis/softlayer/sl-ember-modelize/master.svg)](https://travis-ci.org/softlayer/sl-ember-modelize) [![Code Climate](https://img.shields.io/codeclimate/github/softlayer/sl-ember-modelize.svg)](https://codeclimate.com/github/softlayer/sl-ember-modelize)
 
 To see which issues are currently being worked on or are scheduled to be worked on next, visit [https://huboard.com/softlayer/sl-ember-modelize/#/](https://huboard.com/softlayer/sl-ember-modelize/#/)
 
